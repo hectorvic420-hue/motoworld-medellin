@@ -431,6 +431,9 @@
       transition: transform .18s cubic-bezier(.22,1,.36,1), width .25s, height .25s, opacity .25s;
       opacity: .55;
     }
+    @media (hover: none), (pointer: coarse) {
+      .cursor-dot, .cursor-ring { display: none !important; }
+    }
 
     /* ── SCROLL REVEAL ── */
     .reveal {
@@ -888,7 +891,6 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-logo">
-        <img src="motoworld-logo-black.png" alt="MotoWorld Medellín">
         <p>Compra y venta de motos en Medellín, Antioquia, Colombia.</p>
       </div>
       <div class="footer-links">
